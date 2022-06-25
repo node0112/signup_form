@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Kickflip</title>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">KICKFLIPS</div>
+        <ul id="left">
+            <li><a>How It Works</a></li>
+            <li><a>News</a></li>
+        </ul>
+        <ul id="right">
+            <li><a>Merch</a></li>
+            <li><a>About Us</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <img class="hero" src="./images/home_hero.jpg" alt="shoes_unboxed">
+        <div class="textbox">
+            Connect with millions of Sneaker Heads Just Like You And Barter For More
+            <button class="sign-up" type="button" onclick="formControl('open')">Sign Up Now</button>
+        </div>
+    </div>
+    <form class="signup-form">
+        <div class="close-button" onclick="formControl('close')">X</div>
+        <div class="left-container">
+            <img src="./images/signup.jpg" class="signup-image" alt="shoes for resale">
+            <div class="logo">KICKFLIPS</div>
+        </div>
+        <div class="right-container">
+            <div class="top-text">Get Selling In <div class="highlight">&nbsp; Seconds</div></div>
+            <div class="input">
+                <div class="inputs">
+                    <label for="first-name">First-Name*: <br/> <input type="text" placeholder="Jhon" id="first-name" minlength="3" required></label>
+                    <label for="last-name">Last-Name*:  <br /> <input type="text" placeholder="Doe" id="last-name" minlength="3"  required></label>
+                </div>
+                <div class="inputs">
+                    <label for="email">Email*: <br/> <input type="email" placeholder="meatnugget@fryme.com" id="email" required></label>
+                    <label for="phone">Phone Number:  <br /> <input type="number" placeholder="1983123546" id="phone"></label>
+                </div>
+                <div class="inputs">
+                    <label for="password">Passowrd*: <br/> <input type="password" id="password" minlength="5" required></label>
+                    <label for="confirm-password">Confirm Password*:  <br /> <input type="password" id="confirm-password" minlength="5" required></label>
+                </div>
+                <button type="submit" id="create-account" onclick="checkPassowrds()">Start Selling</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
